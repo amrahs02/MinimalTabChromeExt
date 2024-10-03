@@ -26,7 +26,7 @@ const App = () => {
             Download Now
           </a>
           {/* Disclaimer */}
-          <p className="text-sm text-gray-300 mt-4">
+          <p className="text-sm text-red-300 mt-4">
             * Soon, this extension will be available for download from the
             Chrome Web Store.
           </p>
