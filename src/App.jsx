@@ -3,13 +3,22 @@ import Features from "./Features";
 import Screenshots from "./Screenshots";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import { FaGithub } from "react-icons/fa";
 
 const App = () => {
   return (
-    <div className="font-sans bg-gradient-to-br from-purpl-700 via-indig bg-teal-800 min-h-screen">
+    <div className="font-sans bg-teal-800 min-h-screen">
       {/* Hero Section */}
-      <header className="text-center py-32">
-        <div className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-2xl p-10 max-w-3xl mx-auto">
+      <a
+        href="https://github.com/amrahs02/MinimalTabChromeExt"
+        target="_blank"
+        className="absolute top-4 right-4 z-50"
+        rel="noopener noreferrer"
+      >
+        <FaGithub className="text-2xl  hover:text-gray-400 transition" />
+      </a>
+      <header className="text-center flex justify-center items-center py-32">
+        <div className="bg-white/10 backdrop-blur-lg sm:m-0 mx-6 border border-white/30 rounded-2xl p-10 max-w-3xl ">
           <h1 className="text-5xl font-bold text-white mb-6">
             MinimalTab Chrome Extension
           </h1>

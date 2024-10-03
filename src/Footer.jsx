@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p className="mb-4">&copy; 2024 MinimalTab. All rights reserved.</p>
         <div className="flex justify-center space-x-6">
-          <a href="https://github.com/amrahs02" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/amrahs02/MinimalTabChromeExt" target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-2xl hover:text-gray-400 transition" />
           </a>
           <a href="https://www.linkedin.com/in/sandeepsharma2183/" target="_blank" rel="noopener noreferrer">

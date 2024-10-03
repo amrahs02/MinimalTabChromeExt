@@ -15,13 +15,13 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-16 bg-white/10 backdrop-blur-lg text-center">
+    <section className="py-16 bg-white/10  backdrop-blur-lg  text-center ">
       <h2 className="text-4xl font-bold text-white mb-8">Frequently Asked Questions</h2>
       <div className="max-w-2xl mx-auto">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button
-              className="w-full text-left bg-white/20 backdrop-blur-lg shadow-lg p-4 rounded-lg border border-white/30"
+              className="w-full text-left bg-white/20 backdrop-blur-lg shadow-lg p-4 rounded-2xl border border-white/30"
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-semibold text-white">
