@@ -15,22 +15,22 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-100">
-      <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
+    <section className="py-16 bg-white/10 backdrop-blur-lg text-center">
+      <h2 className="text-4xl font-bold text-white mb-8">Frequently Asked Questions</h2>
       <div className="max-w-2xl mx-auto">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button
-              className="w-full text-left bg-white shadow-md p-4 rounded-lg"
+              className="w-full text-left bg-white/20 backdrop-blur-lg shadow-lg p-4 rounded-lg border border-white/30"
               onClick={() => toggleFAQ(index)}
             >
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-white">
                 {faq.question}
                 <span className="float-right">{open === index ? '-' : '+'}</span>
               </h3>
             </button>
             {open === index && (
-              <p className="p-4 text-gray-600">{faq.answer}</p>
+              <p className="p-4 text-gray-200">{faq.answer}</p>
             )}
           </div>
         ))}
