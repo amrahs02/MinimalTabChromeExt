@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "MinimalTab",
+  "version": "1.0",
+  "description": "MinimalTab is a sleek, minimalist Chrome extension designed to enhance productivity with customizable backgrounds and a built-in task timer.",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "./icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "./image1.jpg",
+        "./image2.jpg",
+        "./image3.jpg",
+        "./image4.jpg",
+        "./image5.jpg"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
